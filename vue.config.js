@@ -7,8 +7,13 @@ module.exports = {
       proxy: {
         '/': {
         target: 'http://musicapi.leanapp.cn',
-        changeOrigin:true
-      }}
+        changeOrigin:true,
+        },
+        'search':{
+          target:'https://music.163.com',
+          changeOrigin:true
+        }
+      } 
     },
     lintOnSave: false,
   }

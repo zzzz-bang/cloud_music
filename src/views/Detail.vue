@@ -39,12 +39,21 @@
               <van-cell v-for="(item,index) in playlist.tracks" :key="item.id" :title="index+item.name"/>
             </van-list> -->
         </div>
+        <!-- <aplayer autoplay
+          :music="{
+            title: 'secret base~君がくれたもの~',
+            artist: 'Silent Siren',
+            src: 'https://moeplayer.b0.upaiyun.com/aplayer/secretbase.mp3',
+            pic: 'https://moeplayer.b0.upaiyun.com/aplayer/secretbase.jpg'
+          }"
+        /> -->
     </div>
 </template>
 <script>
 import axios from 'axios';
 import Vue from 'vue';
 import Title from '@/components/Title';
+import Aplayer from 'vue-aplayer'
 import {mapMutations} from 'vuex';
 // import {List,Cell} from 'vant';
 
@@ -59,7 +68,8 @@ export default {
         }
     },
     components:{
-        Title
+        Title,
+        Aplayer
     },
     methods: {
         ...mapMutations(['show','hide']),

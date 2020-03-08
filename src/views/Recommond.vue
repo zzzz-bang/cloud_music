@@ -3,7 +3,7 @@
         <swiper :key='banners.length' :reswiper="{
             loop:true,
             autoplay: {
-              delay: 2500,
+              delay: 10500000,
               disableOnInteraction: true,
             },
             pagination: {

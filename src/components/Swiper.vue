@@ -11,7 +11,7 @@
 <script>
 import Vue from 'vue'
 import Swiper from 'swiper'
-import 'swiper/css/swiper.css'
+import 'swiper/dist/css/swiper.css'
 export default {
     props:['reswiper'],
     mounted() {
